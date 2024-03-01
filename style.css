@@ -55,6 +55,76 @@ nav ul li:hover a{
 .mobile-nav{
     display: none;
 }
+
+.banner-area{    
+    background-image: url(images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.banner-area::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+}
+
+.banner-text{
+    height: 498px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    position: relative;
+}
+
+.banner-text h3{
+    font-size: 64px;
+    font-weight: 900;
+}
+
+.banner-text p{
+    padding: 40px 0;
+}
+
+.trip-form{
+    background-color: #424247a6;
+    padding: 20px;
+    display: flex;
+}
+
+.trip-form input{
+    padding: 15px;
+    margin: 0 15px;
+    border: none;
+}
+
+.trip-form > button {
+    background-color: #FF5400;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 0 15px;
+    color: #ffffff;
+}
+
+.trip-form > button img{
+    width: 20%;
+    margin-right: 5px;
+}
+/* Responsive Style */
+
 @media screen and (max-width: 600px) {
     .nav-bar{
         width: 600px;    
@@ -65,5 +135,24 @@ nav ul li:hover a{
     }
     .mobile-nav{
         display: block;
+    }
+    .banner-area{
+        width: 580px;
+        padding: 0 20px;
+        margin: 0 10px;
+    }
+    .trip-form{
+        flex-direction: column;
+    }
+    .trip-form input{
+        padding: 15px;
+        margin: 10px 0;
+        border: none;
+    }
+    .banner-text h3{
+        font-size: 40px;
+    }
+    .banner-text p{
+        padding: 20px 0;
     }
 }
