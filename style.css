@@ -15,6 +15,25 @@ img {
     max-width: 100%;
 }
 
+hr {
+    margin: 40px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #131318;
+}
+
+p {
+    color: #424247;
+}
+
+/* Header Style */
+
 .nav-bar {
     width: 1170px;
     margin: 50px auto;
@@ -61,6 +80,8 @@ nav ul li:hover a {
     display: none;
 }
 
+/* Banner Area Style */
+
 .banner-area {
     background-image: url(images/Group\ 13\ \(1\)\ \(1\).png);
     background-repeat: no-repeat;
@@ -89,7 +110,6 @@ nav ul li:hover a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #ffffff;
     z-index: 1;
     position: relative;
 }
@@ -97,10 +117,12 @@ nav ul li:hover a {
 .banner-text h3 {
     font-size: 64px;
     font-weight: 900;
+    color: #ffffff !important;
 }
 
 .banner-text p {
     padding: 40px 0;
+    color: #ffffff !important;
 }
 
 .trip-form {
@@ -122,12 +144,16 @@ nav ul li:hover a {
     border: none;
     padding: 0 15px;
     color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .trip-form>button img {
     width: 20%;
     margin-right: 5px;
 }
+
+/* Popular tour area style */
 
 .popular-tour-area {
     width: 1170px;
@@ -137,7 +163,6 @@ nav ul li:hover a {
 
 .popular-tour-text {
     width: 50%;
-    color: #424247;
     padding-right: 60px;
 }
 
@@ -151,21 +176,25 @@ nav ul li:hover a {
     margin-top: 20px;
 }
 
-.popular-tour-text ul {
+.popular-tour-text ul,
+.vlog-content-text ul {
     margin: 18px 0 0 18px;
 }
 
-.popular-tour-text ul li {
+.popular-tour-text ul li,
+.vlog-content-text ul li {
     padding: 10px 0;
 }
 
-.popular-tour-text button {
+.popular-tour-text button,
+.blog-content button {
     border: none;
     background-color: #FF5400;
     color: #ffffff;
     margin: 15px;
     padding: 10px 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .popular-tour-area img {
@@ -173,22 +202,29 @@ nav ul li:hover a {
     height: auto;
 }
 
+/* Section title style */
+
 .section-title {
     text-align: center;
+    margin: 90px 0;
 }
 
 .section-title h3 {
     font-size: 40px;
     font-weight: 700;
-    color: #131318;
 }
 
 .section-title p {
-    color: #424247;
     margin: 20px 0 80px;
 }
 
-.gallery, .feature-area, .newsletter-area {
+/* Gallery styles */
+
+.gallery,
+.feature-area,
+.newsletter-area,
+.blog-area,
+.vlog-area {
     width: 1170px;
     margin: 0 auto;
 }
@@ -220,13 +256,16 @@ nav ul li:hover a {
 
 }
 
-.feature-container{
+/* Feature content style */
+
+.feature-container,
+.blog-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.feature-content{
+.feature-content {
     width: 46%;
     margin: 20px;
     padding: 20px;
@@ -234,37 +273,91 @@ nav ul li:hover a {
     border-radius: 15px;
 }
 
-.feature-content:nth-child(even){
+.feature-content:nth-child(even) {
     background-color: #F4FDFF;
 }
 
-.feature-content h4{
+.feature-content h4 {
     margin: 20px 0;
 }
 
-.newsletter-area{
+/* Blog area style */
+
+.blog-container {
+    margin: 80px 0;
+}
+
+.blog-content {
+    width: 31%;
+    margin: 10px 10px;
+    border: 1px solid #FF5400;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.blog-content h3 {
+    margin: 15px 0;
+}
+
+.blog-content img {
+    border-radius: 10px;
+}
+
+/* Vlog area style */
+
+.vlog-area {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.vlog-content-text {
+    width: 50%;
+    padding-right: 30px;
+}
+
+.vlog-content-text h4 {
+    margin-bottom: 15px;
+}
+
+.vlog-content-text ul li {
+    font-weight: 900;
+}
+
+.vlog-area img {
+    width: 50%;
+}
+
+/* Newsletter area style */
+
+.newsletter-area {
     display: flex;
     justify-content: space-between;
 }
 
-.newsletter{
+.newsletter {
     width: 460px;
     padding: 25px;
     border: 1px solid #FF5400;
-    border-radius:15px;
+    border-radius: 15px;
 }
 
-.newsletter-text p{
+.newsletter-text h4,
+.vlog-content-text h4 {
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.newsletter-text p {
     margin: 20px 0;
-    color: #424247;
 }
 
-.newsletter-from{
+.newsletter-from {
     display: flex;
     flex-direction: column;
 }
 
-.newsletter-from input{
+.newsletter-from input {
     border: none;
     background-color: #F3F3F3;
     padding: 15px;
@@ -272,17 +365,18 @@ nav ul li:hover a {
     border-radius: 10px;
 }
 
-.newsletter-from input[type=submit]{
+.newsletter-from input[type=submit] {
     background-color: #FF5400;
     color: #ffffff;
     font-weight: 700;
+    cursor: pointer;
 }
 
-.newsletter-image{
+.newsletter-image {
     position: relative;
 }
 
-.newsletter-image p{
+.newsletter-image p {
     position: absolute;
     bottom: 60px;
     right: 0;
@@ -294,38 +388,37 @@ nav ul li:hover a {
     transform: rotate(-40deg);
 }
 
-.newsletter-image span{
+.newsletter-image span {
     font-size: 16px;
     font-weight: 900;
 }
 
-footer{
+/* Footer area style */
+
+footer {
     background-color: #F3F3F3;
     padding: 80px 0;
     margin-top: 40px;
 }
 
-.footer-area{
+.footer-area {
     width: 60%;
     margin: 0 auto;
     text-align: center;
 }
-.footer-content > .logo {
+
+.footer-content>.logo {
     width: 27%;
     margin: 15px auto;
 }
 
-.social-account{
+.social-account {
     margin: 15px 0;
 }
 
-.social-account img{
+.social-account img {
     width: 20px;
     height: 20px;
-}
-
-hr{
-    margin: 40px 0;
 }
 
 /* Responsive Style */
@@ -344,15 +437,40 @@ hr{
         display: block;
     }
 
-    .banner-area, .gallery, .feature-area, .newsletter-area {
+    .banner-area,
+    .popular-tour-area,
+    .gallery,
+    .feature-area,
+    .newsletter-area,
+    .blog-area,
+    .vlog-area {
         width: 580px;
         padding: 0 20px;
         margin: 0 10px;
     }
 
     .trip-form,
-    .popular-tour-area, .gallery-row, .newsletter-area {
+    .popular-tour-area,
+    .gallery-row,
+    .newsletter-area,
+    .vlog-area {
         flex-direction: column;
+    }
+
+    .trip-form>button {
+        padding: 7px 15px;
+        cursor: pointer;
+    }
+
+    .popular-tour-text,
+    .vlog-content-text {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .popular-tour-area img,
+    .vlog-area img {
+        width: 100%;
     }
 
     .trip-form input {
@@ -369,6 +487,10 @@ hr{
         padding: 20px 0;
     }
 
+    .section-title {
+        margin: 45px 0;
+    }
+
     .section-title h3 {
         font-size: 30px;
         margin: 20px 0;
@@ -379,18 +501,37 @@ hr{
         height: 200px;
     }
 
-    .feature-content{
+    .feature-content {
         width: 100%;
     }
 
-    .newsletter-area{
+    .blog-container,
+    .vlog-area {
+        margin: 30px 0;
+    }
+
+    .blog-content {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .vlog-content-text {
         margin-bottom: 30px;
     }
-    .newsletter{
+    .vlog-area{
+        margin-left: 10px;
+    }
+
+    .newsletter-area {
+        margin-bottom: 30px;
+    }
+
+    .newsletter {
         width: 100%;
         margin-bottom: 20px;
     }
-    .footer-content > .logo {
+
+    .footer-content>.logo {
         width: 80%;
     }
 }
