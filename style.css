@@ -188,7 +188,7 @@ nav ul li:hover a {
     margin: 20px 0 80px;
 }
 
-.gallery, .feature-area {
+.gallery, .feature-area, .newsletter-area {
     width: 1170px;
     margin: 0 auto;
 }
@@ -242,6 +242,63 @@ nav ul li:hover a {
     margin: 20px 0;
 }
 
+.newsletter-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter{
+    width: 460px;
+    padding: 25px;
+    border: 1px solid #FF5400;
+    border-radius:15px;
+}
+
+.newsletter-text p{
+    margin: 20px 0;
+    color: #424247;
+}
+
+.newsletter-from{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-from input{
+    border: none;
+    background-color: #F3F3F3;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.newsletter-from input[type=submit]{
+    background-color: #FF5400;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.newsletter-image{
+    position: relative;
+}
+
+.newsletter-image p{
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    background-color: #FF5400;
+    padding: 20px 40px;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 10px;
+    transform: rotate(-40deg);
+}
+
+.newsletter-image span{
+    font-size: 16px;
+    font-weight: 900;
+}
+
 
 /* Responsive Style */
 
@@ -259,14 +316,14 @@ nav ul li:hover a {
         display: block;
     }
 
-    .banner-area, .gallery, .feature-area {
+    .banner-area, .gallery, .feature-area, .newsletter-area {
         width: 580px;
         padding: 0 20px;
         margin: 0 10px;
     }
 
     .trip-form,
-    .popular-tour-area, .gallery-row {
+    .popular-tour-area, .gallery-row, .newsletter-area {
         flex-direction: column;
     }
 
@@ -296,5 +353,13 @@ nav ul li:hover a {
 
     .feature-content{
         width: 100%;
+    }
+
+    .newsletter-area{
+        margin-bottom: 30px;
+    }
+    .newsletter{
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
