@@ -299,6 +299,34 @@ nav ul li:hover a {
     font-weight: 900;
 }
 
+footer{
+    background-color: #F3F3F3;
+    padding: 80px 0;
+    margin-top: 40px;
+}
+
+.footer-area{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-content > .logo {
+    width: 27%;
+    margin: 15px auto;
+}
+
+.social-account{
+    margin: 15px 0;
+}
+
+.social-account img{
+    width: 20px;
+    height: 20px;
+}
+
+hr{
+    margin: 40px 0;
+}
 
 /* Responsive Style */
 
@@ -361,5 +389,8 @@ nav ul li:hover a {
     .newsletter{
         width: 100%;
         margin-bottom: 20px;
+    }
+    .footer-content > .logo {
+        width: 80%;
     }
 }
