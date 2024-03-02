@@ -31,7 +31,7 @@ h6 {
 p {
     color: #424247;
 }
-
+/* Style for large device with 1170px width */
 /* Header Style */
 
 .nav-bar {
@@ -187,7 +187,10 @@ nav ul li:hover a {
 }
 
 .popular-tour-text button,
-.blog-content button {
+.blog-content button,
+.deals-container button,
+.vlog-content-text button,
+.deals-container button {
     border: none;
     background-color: #FF5400;
     color: #ffffff;
@@ -224,7 +227,8 @@ nav ul li:hover a {
 .feature-area,
 .newsletter-area,
 .blog-area,
-.vlog-area {
+.vlog-area,
+.deals-container {
     width: 1170px;
     margin: 0 auto;
 }
@@ -281,6 +285,72 @@ nav ul li:hover a {
     margin: 20px 0;
 }
 
+/* Deals Area style */
+
+.deals-content-one,
+.deals-content-two,
+.deals-content-three {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px;
+    display: flex;
+    justify-content: end;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.deals-content-one {
+    background-image: url(images/swimming-pool-249624_1280.jpg);
+}
+
+.deals-content-two {
+    background-image: url(images/hotel-7885138_1280.jpg);
+    justify-content: start;
+}
+
+.deals-content-three {
+    background-image: url(images/beach-hut-237489_1280.jpg);
+}
+
+.deals-content {
+    background-color: #ffe9e9a8;
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.deals-tag {
+    display: flex;
+    align-items: center;
+    margin-left: -20px;
+}
+
+.deals-tag img {
+    margin-left: 20px;
+}
+
+.deals-content h3 {
+    margin: 15px 0;
+}
+
+.price {
+    font-weight: 700;
+    color: #FF5400;
+    margin-top: 15px;
+}
+
+.deals-content button {
+    margin-left: 0;
+}
+
+.deals-container>button {
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
 /* Blog area style */
 
 .blog-container {
@@ -307,7 +377,7 @@ nav ul li:hover a {
 
 .vlog-area {
     display: flex;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 80px;
 }
 
@@ -350,6 +420,10 @@ nav ul li:hover a {
 
 .newsletter-text p {
     margin: 20px 0;
+}
+
+.newsletter hr {
+    margin: 10px 0;
 }
 
 .newsletter-from {
@@ -417,9 +491,9 @@ footer {
 }
 
 .social-account img {
-    width: 20px;
-    height: 20px;
+    margin: 0 10px;
 }
+
 
 /* Responsive Style */
 
@@ -443,7 +517,8 @@ footer {
     .feature-area,
     .newsletter-area,
     .blog-area,
-    .vlog-area {
+    .vlog-area,
+    .deals-container {
         width: 580px;
         padding: 0 20px;
         margin: 0 10px;
@@ -505,6 +580,14 @@ footer {
         width: 100%;
     }
 
+    .deals-content {
+        width: 100%;
+    }
+
+    .deals-container>button {
+        display: none;
+    }
+
     .blog-container,
     .vlog-area {
         margin: 30px 0;
@@ -518,7 +601,8 @@ footer {
     .vlog-content-text {
         margin-bottom: 30px;
     }
-    .vlog-area{
+
+    .vlog-area {
         margin-left: 10px;
     }
 
